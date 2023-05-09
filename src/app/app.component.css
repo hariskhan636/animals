@@ -1,0 +1,21 @@
+.header {
+  height: 100px;
+  background-color: darkolivegreen;
+  margin: -8px;
+}
+
+a {
+  color: white;
+  font-size: large;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.main {
+  background-color: rgb(144, 180, 81);
+  min-height: 500px;
+  margin: -16px -8px;
+}
