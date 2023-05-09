@@ -11,11 +11,10 @@ a {
 
 li {
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 6px;
 }
 
 .main {
-  background-color: rgb(144, 180, 81);
-  min-height: 500px;
+  background-color: black;
   margin: -16px -8px;
 }

@@ -1,0 +1,17 @@
+.container {
+  padding: 10px;
+  margin: 16px;
+  max-height: 500px;
+  background-color: rgb(144, 180, 81);
+  overflow-y: scroll;
+}
+
+.animals {
+  border: solid;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+h3 {
+  margin: 10px 20px;
+}
