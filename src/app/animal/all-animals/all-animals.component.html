@@ -1,12 +1,9 @@
 <div class="container">
-  <div class="animals" *ngFor="let animal of animalList">
+  <div class="animals" *ngFor="let animal of animalList; let i = index">
+    <button [disabled]="true">{{ i + 1 }}</button>
     <h3>Name: {{ animal.name }}</h3>
     <h3>Species: {{ animal.species }}</h3>
-    <div class="foods" *ngFor="let food of animal.foods.likes">
-      <h3>Likes: {{ food }}</h3>
-    </div>
-    <div class="foods" *ngFor="let food of animal.foods.dislikes">
-      <h3>Dislikes: {{ food }}</h3>
-    </div>
+    <h3>Likes: {{ animal.foods.likes.join(", ") }}</h3>
+    <h3>Dislikes: {{ animal.foods.dislikes.join(", ") }}</h3>
   </div>
 </div>

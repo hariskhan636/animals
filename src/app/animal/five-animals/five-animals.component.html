@@ -1,3 +1,9 @@
-<p>
-  five-animals works!
-</p>
+<div class="container">
+  <div class="animals" *ngFor="let animal of animals; let i = index">
+    <button [disabled]="true">{{ i + 1 }}</button>
+    <h3>Name: {{ animal.name }}</h3>
+    <h3>Species: {{ animal.species }}</h3>
+    <h3>Likes: {{ animal.foods.likes.join(", ") }}</h3>
+    <h3>Dislikes: {{ animal.foods.dislikes.join(", ") }}</h3>
+  </div>
+</div>

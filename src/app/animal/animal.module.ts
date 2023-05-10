@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FiveAnimalsComponent } from './five-animals/five-animals.component';
 import { AllAnimalsComponent } from './all-animals/all-animals.component';
 import { RouterModule } from '@angular/router';
+import { AnimalDataService } from './animalData.service';
 
 @NgModule({
   imports: [
@@ -20,5 +21,6 @@ import { RouterModule } from '@angular/router';
   ],
 
   declarations: [FiveAnimalsComponent, AllAnimalsComponent],
+  providers: [AnimalDataService],
 })
 export class AnimalModule {}
